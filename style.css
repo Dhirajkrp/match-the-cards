@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container {
+  height: 80vh;
+  width: 50vw;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.5em;
+}
+
+.card {
+  box-sizing: border-box;
+  border-radius: 1em;
+  transition-timing-function: ease-in-out;
+  transition: background-color 0.5s;
+}
+
+.hidden {
+  background-color: #2b2b2b !important ;
+  transition-timing-function: ease-in-out;
+  transition: background-color 0.5s;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+nav h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+nav h2 {
+  font-weight: 500;
+}
+
+/*class for colours*/
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.violet {
+  background-color: violet;
+}
+.magenta {
+  background-color: magenta;
+}
+.cyan {
+  background-color: cyan;
+}
+.maroon {
+  background-color: maroon;
+}
+
+.brown {
+  background-color: brown;
+}
+.pink {
+  background-color: pink;
+}
+
+@media (max-width: 65em) {
+  .container {
+    height: 60vh;
+    width: 90vw;
+    gap: 2em;
+    margin-bottom: 10em;
+  }
+  nav {
+    font-size: 2em;
+  }
+}
